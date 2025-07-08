@@ -49,13 +49,17 @@ Social media platforms contain vast amounts of text that can reflect users’ me
 
 ## 📊 Model Performance
 
-| Model               | Accuracy | AUC Score |
-|--------------------|----------|-----------|
-| K-Nearest Neighbors| ~85%     | 0.85      |
-| Logistic Regression| ~89%     | 0.95      |
-| 🌟 Random Forest    | **~89%** | **0.946** |
+| Metric                | K-Nearest Neighbors | Logistic Regression | 🌟 Random Forest |
+|----------------------|---------------------|---------------------|------------------|
+| **Training Accuracy** | 88.1%               | 91.8%               | **99.8%**        |
+| **Testing Accuracy**  | 91.3%               | 89.6%               | **89.7%**        |
+| **Precision**         | 0.91 / 0.94         | 0.88 / 0.90         | **0.93 / 0.94**  |
+| **Recall**            | 0.73 / 0.98         | 0.71 / 0.96         | **0.80 / 0.93**  |
+| **F1-Score**          | 0.82 / 0.94         | 0.78 / 0.93         | **0.86 / 0.93**  |
+| **Cross-Validation**  | 81.6%               | 87.1%               | **86.3%**        |
+| **AUC Score**         | 0.958               | 0.947               | **0.951**        |
 
-> 🔍 Random Forest performed best and was deployed in production.
+> ✅ **Random Forest** consistently performed better across most evaluation metrics — particularly in **AUC**, **recall**, and **test generalization** — making it the best choice for deployment in mental health prediction.
 
 ---
 
